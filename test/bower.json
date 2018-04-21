@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "homepage": "https://github.com/puroc/learning-js-es6",
+  "authors": [
+    "puroc <p00u00r00>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
