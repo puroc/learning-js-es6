@@ -3,15 +3,23 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import locale from 'element-ui/lib/locale/lang/zh-CN'
+
 import app1 from './app1'
 import app2 from './app2'
+import app3 from './app3'
 
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+Vue.use(ElementUI, { locale })
 Vue.use(app1)
 Vue.use(app2)
+Vue.use(app3)
 
 // 1. 定义（路由）组件。
 // 可以从其他文件 import 进来
@@ -27,7 +35,8 @@ const routes = [
   // { path: '/foo', component: Foo },
   // { path: '/bar', component: Bar }
   { path: '/app1', component: app1 },
-  { path: '/app2', component: app2 }
+  { path: '/app2', component: app2 },
+  { path: '/app3', component: app3 }
 ]
 
 // 3. 创建 router 实例，然后传 `routes` 配置

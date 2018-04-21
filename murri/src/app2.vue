@@ -5,9 +5,11 @@
         <div class="board-column-header">To do</div>
         <div class="board-column-content-wrapper">
           <div class="board-column-content">
+
             <div class="board-item">
               <div class="board-item-content">
-                <span>Item #</span>1</div>
+                <el-button type="primary" @click="handler">主要按钮</el-button>
+              </div>
             </div>
             <div class="board-item">
               <div class="board-item-content">
@@ -89,19 +91,26 @@
 <script>
 import Muuri from "muuri";
 export default {
-  name:'app2',
+  name: "app2",
+  methods: {
+    handler() {
+      alert("haha");
+    }
+  },
   mounted() {
-    var itemContainers = [].slice.call(
-      document.querySelectorAll(".board-column-content")
-    );
-    var columnGrids = [];
-    var boardGrid;
+    // var itemContainers = [].slice.call(
+    //   document.querySelectorAll(".board-column-content")
+    // );
+    let p = document.querySelectorAll(".board-column-content");
+    let itemContainers = Array.from(p);
+    let columnGrids = [];
+    let boardGrid;
 
     // Define the column grids so we can drag those
     // items around.
     itemContainers.forEach(function(container) {
       // Instantiate column grid.
-      var grid = new Muuri(container, {
+      let grid = new Muuri(container, {
         items: ".board-item",
         layoutDuration: 400,
         layoutEasing: "ease",
