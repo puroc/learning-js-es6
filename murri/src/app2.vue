@@ -5,11 +5,9 @@
         <div class="board-column-header">To do</div>
         <div class="board-column-content-wrapper">
           <div class="board-column-content">
-
             <div class="board-item">
               <div class="board-item-content">
-                <el-button type="primary" @click="handler">主要按钮</el-button>
-              </div>
+                <span>Item #</span>1</div>
             </div>
             <div class="board-item">
               <div class="board-item-content">
@@ -92,11 +90,6 @@
 import Muuri from "muuri";
 export default {
   name: "app2",
-  methods: {
-    handler() {
-      alert("haha");
-    }
-  },
   mounted() {
     // var itemContainers = [].slice.call(
     //   document.querySelectorAll(".board-column-content")
