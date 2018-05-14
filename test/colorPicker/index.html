@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+    <link rel="stylesheet" href="../bower_components/evol-colorpicker/css/evol-colorpicker.min.css">
+</head>
+
+<body>
+    <div style="width:128px;">
+        <input  id="mycolor" class="colorPicker evo-cp0" />
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/jquery-ui/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/evol-colorpicker/js/evol-colorpicker.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#mycolor").colorpicker({
+                history: false
+            });
+        });
+
+    </script>
+</body>
+
+</html>
