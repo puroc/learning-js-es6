@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link href="../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet">
     <style>
-        .colorpicker-color{
+        .colorpicker-color {
             /* width: 100px; */
             display: none
         }
@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div id="cp13" class="input-group colorpicker-component">
-        <input type="text" class="form-control input-lg" value="I am an invalid color" />
+    <div id="cp2" class="input-group colorpicker-component" title="Using input value">
+        <input type="text" class="form-control input-lg" value="#000000" />
         <span class="input-group-addon">
             <i></i>
         </span>
@@ -24,9 +24,7 @@
 
     <script>
         $(function () {
-            $('#cp13').colorpicker({
-                autoInputFallback: false
-            });
+            $('#cp2').colorpicker();
         });
     </script>
 </body>
